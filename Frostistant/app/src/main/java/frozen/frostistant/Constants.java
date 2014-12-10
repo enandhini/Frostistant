@@ -1,30 +1,51 @@
+/*
+ *  Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license at the bottom of this file.
+ */
+
 package frozen.frostistant;
 
-/**
- * Created by yinaa on 12/9/2014.
- */
-
-/*******************************************************************************
- * Copyright (c) Microsoft Open Technologies, Inc.
- * All Rights Reserved
- * See License.txt in the project root for license information.
- ******************************************************************************/
-
-/**
- * this class holds the service constants to connect to Office 365 Outlook services
- * please note that the sample assume that all of this constants will work for all services, which
- * may not be the case
- *
- * fill in the values according to your subscription
- */
-public class Constants {
+public interface Constants {
     public static final String AUTHORITY_URL = "https://login.windows.net/common";
-    public static final String RESOURCE_ID = "https://outlook.office365.com/";
-    public static final String REDIRECT_URL = "";
-    public static final String CLIENT_ID = "a31dbe4d-73c0-4a61-b197-f3474c418db5";
+    public static final String RESOURCE_ID = "https://api.office.com/discovery/";
+    public static final String DISCOVERY_RESOURCE_URL = "https://api.office.com/discovery/v1.0/me/";
+    public static final String DISCOVERY_RESOURCE_ID = "https://api.office.com/discovery/";
+    public static final String MYFILES_CAPABILITY = "MyFiles";
+    public static final String CALENDAR_CAPABILITY = "Calendar";
+    public static final String ODATA_ENDPOINT = "ews/odata";
     public static final String ENCRYPTION_KEY = "EncryptionKey";
-    // it is generally the case for O365 services that the endpoint ID is the concatenation
-    // RESOURCE_ID and the api version. Please check against your actual deployment
-    public static final String ENDPOINT_ID = RESOURCE_ID + "api/v1.0";
+    public static final int TOP_VALUE = 40;
+    public static final String USER_HINT = "";
+    public static final String CALENDER_ID = "Calendar";
+    // Update these two constants with the values for your application:
+    public static final String CLIENT_ID = "a31dbe4d-73c0-4a61-b197-f3474c418db5";
+    public static final String REDIRECT_URI = "https://localhost";
 }
 
+//*********************************************************
+//
+//O365-Android-Start, https://github.com/OfficeDev/O365-Android-Start
+//
+//Copyright (c) Microsoft Corporation
+//All rights reserved.
+//
+//MIT License:
+//Permission is hereby granted, free of charge, to any person obtaining
+//a copy of this software and associated documentation files (the
+//"Software"), to deal in the Software without restriction, including
+//without limitation the rights to use, copy, modify, merge, publish,
+//distribute, sublicense, and/or sell copies of the Software, and to
+//permit persons to whom the Software is furnished to do so, subject to
+//the following conditions: 
+//
+//The above copyright notice and this permission notice shall be
+//included in all copies or substantial portions of the Software.
+//
+//THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+//EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+//MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+//NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+//LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+//OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+//WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+//*********************************************************
