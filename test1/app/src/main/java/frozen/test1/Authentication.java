@@ -1,4 +1,4 @@
-package frozen.frostistant;
+package frozen.test1;
 
 import android.app.Activity;
 import android.text.TextUtils;

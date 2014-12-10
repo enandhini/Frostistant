@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.1.1"
 
     defaultConfig {
-        applicationId "frozen.frostistant"
+        applicationId "frozen.test1"
         minSdkVersion 19
         targetSdkVersion 21
         versionCode 1
@@ -36,6 +36,6 @@ dependencies {
 
     // ADAL
     compile (group: 'com.microsoft.aad', name: 'adal', version: '1.0.0') {
-        exclude group: 'com.android.support'   // this may not be necessary
+         exclude group: 'com.android.support'   // this may not be necessary
     }
 }
